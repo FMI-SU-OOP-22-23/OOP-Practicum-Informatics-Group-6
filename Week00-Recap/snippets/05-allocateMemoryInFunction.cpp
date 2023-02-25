@@ -1,6 +1,6 @@
 #include <iostream>
 
-// if the pointer is not passed by reference, a copy of the pointer would be passed
+// if the pointer is not passed by reference, a copy of the pointer will be passed
 // so the pointer in the main will not point to the array allocated in the function
 void createArray(int*& arr, std::size_t& size)
 {

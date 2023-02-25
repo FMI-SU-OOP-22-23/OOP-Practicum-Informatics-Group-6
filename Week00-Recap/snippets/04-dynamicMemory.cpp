@@ -9,7 +9,7 @@ HOW TO WORK CORRECTLY WITH DYNAMIC MEMORY?
 */
 
 // compiles, but is wrong
-// it returns pointerto an array that will 'die' at the end of the function (local array)
+// it returns pointer to an array that will 'die' at the end of the function (local array)
 // int* getArr()
 // {
 //     int arr[5] = {1, 2, 3, 4, 5};
@@ -18,7 +18,7 @@ HOW TO WORK CORRECTLY WITH DYNAMIC MEMORY?
 // }
 
 // the function allocates array for 5 elements in the heap
-// the array will continu to 'live' in the main
+// the array will continue to 'live' in the main
 // a pointer to the first element is returned
 int* getArr()
 {

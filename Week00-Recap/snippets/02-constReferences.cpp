@@ -25,7 +25,7 @@ int main ()
     int a = 3;
 
     f(a);
-    f(4); // this also works as the function won't change the value anyay
+    f(4); // this also works as the function will not change the value anyway
     // if a literal is passed, a temporary object for it is created
 
     Person person{"Pesho", 21, 180};

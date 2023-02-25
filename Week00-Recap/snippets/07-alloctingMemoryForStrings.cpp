@@ -5,7 +5,7 @@ const std::size_t MAX_SIZE = 256;
 
 int main ()
 {
-    char buffer[256];
+    char buffer[MAX_SIZE];
     std::cin >> buffer;
 
     char* str = new (std::nothrow) char[strlen(buffer) + 1];
