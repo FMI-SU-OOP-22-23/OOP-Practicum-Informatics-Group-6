@@ -88,5 +88,5 @@
 * `int getClientIndex(const char* identificationNumber) const`
 * `bool deposit(const char* identificationNumber, const Money& toDeposit)`
 * `bool withdraw(const char* identificationNumber, const Money& toWithdraw)`
-* `bool transfer(const char* sourceClientIdentificationNumber, const char* destinationClientIdentifinationNumber, Money moneyToTransfer)` - Първо трябва да се провери дали съществуват клиентите, после дали source клиентът има достатъчно пари да прехвърли към destionation клиента. После маха парите от source и ги дава на destination. При различни валути може да се наложи конвертиране на парите***
+* `bool transfer(const char* sourceClientIdentificationNumber, const char* destinationClientIdentifinationNumber, Money moneyToTransfer)` - Първо трябва да се провери дали съществуват клиентите, после дали source клиентът има достатъчно пари да прехвърли към destionation клиента. После маха парите от source и ги дава на destination. При различни валути може да се наложи конвертиране на парите
 * `bool convertClientMoney(const char* identificationNumber, Currency newCurrency)`
