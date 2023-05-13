@@ -22,18 +22,17 @@
 ### Задача 2 :couch_and_lamp::house:
 Даден е следният интерфейс:
 ```c++
-template <class T, class ID>
-class CrudRepository
+class FurnitureCrudRepository
 {
 public:
-    virtual void create(const T& object) = 0;
-    virtual const T& read(ID id) const = 0;
-    virtual void update(ID id, const T& newObject) = 0;
-    virtual void d_remove(ID id) = 0;
+    virtual void create(const Furniture* object) = 0;
+    virtual const Furniture* read(unsigned int id) const = 0;
+    virtual void update(unsigned int id, const Furniture* newObject) = 0;
+    virtual void d_remove(unsigned int id) = 0;
 };
 ```
 
-Реализирайте класове `FurnitureHouseInMemory` и `FurnitureHouseInFile`, имплементиращи интерфейса `CrudRepository<Furniture*, unsigned int>` по подходящ начин, пазейки информация за мебелите от задача 1. Първият клас трябва да пази информацията за мебелите в динамичната памет, а вторият трябва да поддържа базата данни в текстов файл.
+Реализирайте класове `FurnitureHouseInMemory` и `FurnitureHouseInFile`, имплементиращи интерфейса `CrudRepository` по подходящ начин, пазейки информация за мебелите от задача 1. Първият клас трябва да пази информацията за мебелите в динамичната памет, а вторият трябва да поддържа базата данни в текстов файл.
 
 ### Задача 3 :mirror:
 Реализирайте полиморфично клониране за класовете, които съдържат масиви от пойнтъри, сочещи към различен тип обекти, (хетерогенни контейнери) - `Menu` (предишния практикум) и `FurnitureHouseInMemory` (задача 2)
