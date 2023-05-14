@@ -13,7 +13,6 @@ class Logger
 {
 private:
     std::ofstream out;
-    std::size_t size;
 
     const char* logLevelToString(LogLevel logLevel)
     {
@@ -34,7 +33,6 @@ private:
 
 public:
     Logger(const char* fileName)
-        : size(0)
     {
         out.open(fileName);
 
