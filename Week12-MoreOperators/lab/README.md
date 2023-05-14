@@ -1,4 +1,4 @@
-# Още оператори и свързани обекти
+# Още оператори
 
 ## Music playlist V2 :musical_score::microphone:	
 
